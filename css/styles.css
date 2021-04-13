@@ -44,20 +44,17 @@ main {
 }
 
 
-main h1 {
-  padding: 0;
-  margin: 0;
-}
-
-main section {
+.img-contaner {
   border: 2px solid rgb(176, 25, 190);
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
+  background: url("../img/france-map-kids.jpg");
+  background-repeat: round;
+  background-size: contain;
   position:absolute;
-  margin: 20px 0 20px 0;
-  height: 300px;
-  max-height: 250px ;
-  width:  500px;
-  left: 100px;
+  margin: 0 auto;
+  height: 460px;
+  width:  1200px;
+  left: 2%;
 
 
 }
