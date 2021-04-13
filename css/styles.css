@@ -15,9 +15,11 @@ body {
 
 .page-contaner {
   border: 2px solid rgb(45, 204, 24);
+  background: rgb(99, 99, 99);
   position: relative;
-  width: 1260px;
-  height: 1280px;
+  width: 1255px;
+  height: 574px;
+  margin: 0 auto;
 }
 
 header {
@@ -66,9 +68,6 @@ footer {
   position: absolute;
   bottom: 0;
   width:100%;
-  margin: 2px;
-  flex-shrink: 0;
-
 }
 
 footer h1 {
