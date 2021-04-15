@@ -48,7 +48,7 @@ body {
   text-align: center;
 }
 
-.header nav {
+.navbar {
   border: 1px solid rgb(204, 229, 233);
   position: relative;
   display: grid;
