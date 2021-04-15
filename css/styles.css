@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +16,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   height: 100%;
   width: 100%;
 }
@@ -121,7 +124,6 @@ body {
   justify-content: center;
   justify-items: center;
   text-align: center;
-
 }
 
 .contact {
