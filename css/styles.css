@@ -32,8 +32,6 @@ body {
   /* max-height: 1360px;  */
   min-height: 574px;
   min-width: 585px;
-
-
 }
 
 .header {
@@ -75,11 +73,11 @@ body {
   width: calc(100vw - 3rem);
   height: auto;
   min-width: 580px;
-  max-height: 500px;
+  max-height: 800px;
   max-width: 850px;
 }
 
-.map-contaner img {
+.map {
   position: relative;
   display: block;
   width: 100%;
@@ -87,6 +85,22 @@ body {
   margin: 0 auto;
   max-height: 100%;
   max-width: 100%;
+}
+
+.gif-container .gif {
+  border: 3px green solid;
+  display: none;
+  position: absolute;
+  color: #fff;
+  background: #000;
+  padding: 5px;
+}
+.gif-container {
+  position: relative;
+}
+.gif-container:hover .gif {
+  display: block;
+  text-align: center;
 }
 
 @media (max-width: 380px) {
