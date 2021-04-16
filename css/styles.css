@@ -18,16 +18,14 @@ body {
   padding: 0;
   /* height: 100%; */
   width: 100%;
-  background: url("../img/background-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  
 }
 
 .page-container {
   
   border: 2px solid rgb(45, 204, 24);
+  background: url("../img/background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
