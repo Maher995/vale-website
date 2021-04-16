@@ -11,9 +11,11 @@ html {
  
   height: 100%;
   width: 100%;
+  
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   /* height: 100%; */
@@ -157,13 +159,13 @@ body {
 
 
 
-/* 
-@media (max-width: 827px) {
+
+@media (min-width: 590px) and (min-height: 700px) {
   body {
     height: 100%;
   }
 
-} */
+}
 
 @media (max-width: 380px) {
   body {
