@@ -8,10 +8,8 @@
   box-sizing: border-box;
 }
 html {
- 
   height: 100%;
   width: 100%;
-  
 }
 
 body {
@@ -24,7 +22,6 @@ body {
 }
 
 .page-container {
-  
   border: 2px solid rgb(45, 204, 24);
   background: url("../img/background-3.svg");
   background-repeat: no-repeat;
@@ -38,7 +35,6 @@ body {
   /* max-height: 1360px;  */
   /* min-height: 574px; */
   min-width: 350px;
-  
 }
 
 .header {
@@ -94,78 +90,80 @@ body {
   max-width: 100%;
 }
 
-.gif-container .gif {
-  border: 3px green solid;
-  display: none;
-  position: absolute;
-  color: #fff;
-  background: #000;
-  padding: 5px;
-}
-.gif-container {
+.img-group {
   position: relative;
-  width: 300px;
-  height: 300px;
-}
-.gif-container:hover .gif {
-  display: block;
-  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.scale-up-ver-bottom {
-
-  width: 300px;
-  height: 300px;
+.gif {
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
   display: none;
-
-
-}
-.gif-container:hover .scale-up-ver-bottom {
-  display: inline-block;
-	-webkit-animation: scale-up-ver-bottom 0.7s ease-in-out both;
-	        animation: scale-up-ver-bottom 0.7s ease-in-out both;
 }
 
-@-webkit-keyframes scale-up-ver-bottom {
+
+
+.gif-container:hover .gif {
+  display: block;
+  -webkit-animation: gif 0.7s ease-in-out both;
+  animation: gif 0.7s ease-in-out both;
+}
+
+@-webkit-keyframes gif {
   0% {
     -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
+    transform: scaleY(0.4);
     -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
   }
   100% {
     -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
     -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
   }
 }
-@keyframes scale-up-ver-bottom {
+@keyframes gif {
   0% {
     -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
+    transform: scaleY(0.4);
     -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
   }
   100% {
     -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
     -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
   }
 }
 
+.test-container {
+  width: 400px;
+  height: 400px;
+  background: rgb(28, 25, 190);
+  margin: 0 auto;
+  display: block;
+}
 
+.test {
+  width: 200px;
+  height: 200px;
+  background: rgb(127, 190, 25);
+  margin: 0 auto;
+  display: none;
+}
 
-
-
+/* .test-container:hover .test {
+  display: block;
+} */
 
 @media (min-width: 590px) and (min-height: 700px) {
   body {
     height: 100%;
   }
-
 }
 
 @media (max-width: 380px) {
