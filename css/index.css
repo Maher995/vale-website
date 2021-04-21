@@ -1,0 +1,128 @@
+.main {
+  /* border: 2px solid rgb(28, 25, 190); */
+}
+
+.map-contaner {
+  /* border: 3px solid rgb(190, 25, 25); */
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  width: calc(100vw - 3rem);
+  height: auto;
+  min-width: 300px;
+  max-height: 800px;
+  max-width: 850px;
+}
+
+.map {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.img-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gif {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: none;
+}
+
+.gif-container:hover .gif {
+  display: block;
+  -webkit-animation: gif 0.7s ease-in-out both;
+  animation: gif 0.7s ease-in-out both;
+}
+
+@-webkit-keyframes gif {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+}
+@keyframes gif {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+}
+
+.test-container {
+  width: 400px;
+  height: 400px;
+  background: rgb(28, 25, 190);
+  margin: 0 auto;
+  display: block;
+}
+
+.test {
+  width: 200px;
+  height: 200px;
+  background: rgb(127, 190, 25);
+  margin: 0 auto;
+  display: none;
+}
+
+/* .test-container:hover .test {
+    display: block;
+  } */
+
+/* @media (min-width: 590px) and (min-height: 700px) {
+  body {
+    height: 100%;
+  }
+} */
+
+@media (max-width: 380px) {
+  /* body {
+    height: 100%;
+  } */
+  .page-container {
+    min-width: 260px;
+    /* min-height: 200px; */
+  }
+  .map-contaner {
+    min-width: 260px;
+    height: 400px;
+    min-height: 400px;
+  }
+}
+@media (max-width: 414px) {
+  /* body {
+    height: 100%;
+  } */
+  .page-container {
+    min-width: 358px;
+    /* min-height: 200px; */
+  }
+  .map-contaner {
+    min-width: 350px;
+    height: 471px;
+    margin: 17px auto;
+  }
+}

@@ -6,24 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/nav.css" />
   </head>
   <body>
-    <script>
-      function gifFnc() {
-        var x = document.getElementsByClassName("test");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
 
     <div class="page-container">
       <div class="page-item header">
-        <div class="logo">logo</div>
-        <nav class="navbar">nav</nav>
+        <nav class="navbar">
+          <img src="./img/logo.jpg" alt="" class="logo">
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </nav>
 
         <!-- test -->
         <nav role="navigation">
